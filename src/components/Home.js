@@ -7,7 +7,7 @@ import backgroundVideo from '../components/video/background.mp4';
 
 
 import '../App.css';
-import Video from "./Video";
+import HeroUnit from "./HeroUnit";
 const defaultPropsProjects = {
   //background: 'linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)'
   style: { width: '100%', height: '45rem', background: 'black', transform: 'skewY(-2.5deg)' },
@@ -27,8 +27,8 @@ function Home()
 
 
     <div className="App">
-      <Box style={{ position: "relative", background: "l#46416" }}>
-        <Video />
+      <Box style={{ position: "relative" }}>
+        <HeroUnit />
       </Box>
 
       <Box display="flex" justifyContent="center" {...defaultPropsProjects}>
