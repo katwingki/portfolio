@@ -1,9 +1,8 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import { Button, Typography } from '@material-ui/core';
 
 import { motion } from "framer-motion";
 import
@@ -16,8 +15,8 @@ import
 
 import './HeroUnit.css';
 import backgroundVideo from '../components/video/background.mp4';
-import Box from '@material-ui/core/Box';
-import { Button, Typography } from '@material-ui/core';
+import resume from '../components/resume/Kathryn_Lam_Resume.pdf'
+
 
 const useStyles = makeStyles((theme) => ({
 
@@ -157,6 +156,9 @@ function HeroUnit()
             <Paper className={classes.paper}>Express</Paper>
           </Grid>
           <Grid item xs={3}>
+            <Paper className={classes.paper}>REST API</Paper>
+          </Grid>
+          <Grid item xs={3}>
             <Paper className={classes.paper}>React</Paper>
           </Grid>
           <Grid item xs={3}>
@@ -168,16 +170,14 @@ function HeroUnit()
           <Grid item xs={3}>
             <Paper className={classes.paper}>CSS</Paper>
           </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
-          </Grid>
+
 
         </Grid>
         <Grid container spacing={1} style={{ textAlign: "center", marginLeft: "25%", marginTop: "1%" }}>
 
           <Grid item xs={6}>
 
-            <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper>
+            <Paper className={classes.button}><a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}> <Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></a></Paper>
           </Grid>
         </Grid>
 
