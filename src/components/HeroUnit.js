@@ -29,24 +29,25 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     background: "#ceddff",
+    marginTop: "1%"
   },
   intro: {
     width: '90vw',
     position: "absolute",
     textAlign: "left",
-    top: "4%",
+    top: "15%",
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      top: "15%",
+      top: "13%",
     },
 
   },
   techGrid: {
     width: '80vw',
     position: "absolute",
-    top: "42%",
+    top: "38%",
     left: "7%",
-    background: "#303f61",
+    // background: "#303f61",
     textAlign: "center",
     marginLeft: "9%",
     borderRadius: "10px",
@@ -55,24 +56,20 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   socialIconTop: {
-    marginTop: "3%",
+    marginTop: "2%",
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      marginTop: "13  %",
+      marginTop: "13%",
       marginLeft: "-2%",
     },
 
   },
   socialIconOther: {
-
     marginLeft: "4%",
     '@media (max-width:968px)': {
-
-      marginLeft: "-2%",
+      marginLeft: "-2%"
     },
-
   }
-
 
 }));
 
@@ -87,7 +84,7 @@ function HeroUnit()
         autoPlay
         loop
         muted
-        style={{ width: '100%', height: "90vh", objectFit: "cover", position: "relative", zIndex: 0 }}
+        style={{ width: '100%', height: "85vh", objectFit: "cover", position: "relative", zIndex: 0, opacity: "0.85" }}
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
