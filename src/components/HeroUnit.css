@@ -1,0 +1,14 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon-link {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.button {
+  color: white;
+}
