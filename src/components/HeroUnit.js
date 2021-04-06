@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { Button, Typography } from '@material-ui/core';
+import { Box, Button, Typography } from '@material-ui/core';
 
 import { motion } from "framer-motion";
 import
@@ -22,13 +22,46 @@ const useStyles = makeStyles((theme) => ({
 
   paper: {
     padding: theme.spacing(1),
+    width: "10vw",
+    margin: "2%",
     textAlign: 'center',
     color: "black",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    '@media (max-width:968px)': {
+      width: "25vw",
+    },
+
   },
   button: {
     background: "#ceddff",
-    marginTop: "1%"
+    marginTop: "1%",
+    width: "43vw"
+  },
+  buttonGrid: {
+    position: "absolute",
+    textAlign: "center",
+    top: "78%",
+    left: "40%",
+    width: "80vw",
+    '@media (max-width:968px)': {
+      width: "25vw",
+      top: "87%",
+    },
+  },
+  mainTechGrid: {
+    width: '80vw',
+    position: "absolute",
+    top: "50%",
+    left: "8%",
+    flexDirection: "column",
+    textAlign: "center",
+    marginLeft: "9%",
+    borderRadius: "10px",
+    justifyContent: "space-evenly",
+    '@media (max-width:968px)': {
+      top: "60%",
+      flexDirection: "row"
+    },
   },
   intro: {
     width: '90vw',
@@ -37,21 +70,32 @@ const useStyles = makeStyles((theme) => ({
     top: "15%",
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      top: "13%",
+      top: "3%",
     },
 
   },
   techGrid: {
-    width: '80vw',
-    position: "absolute",
-    top: "38%",
-    left: "7%",
-    // background: "#303f61",
     textAlign: "center",
     marginLeft: "9%",
+    margineRight: "2%",
+    borderRadius: "10px",
+    justifyContent: "space-evenly",
+    '@media (max-width:968px)': {
+      maxWidth: "20vh",
+      flexWrap: "wrap",
+      marginLeft: "2%",
+    },
+  },
+  techTitle: {
+    width: '80vw',
+    position: "absolute",
+    top: "45%",
+    left: "56%",
+    color: "white",
     borderRadius: "10px",
     '@media (max-width:968px)': {
-      top: "58%",
+      top: "55%",
+      left: "42%",
     },
   },
   socialIconTop: {
@@ -59,14 +103,14 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "4%",
     '@media (max-width:968px)': {
       marginTop: "13%",
-      marginLeft: "-2%",
+      marginLeft: "2%",
     },
 
   },
   socialIconOther: {
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      marginLeft: "-2%"
+      marginLeft: "2%"
     },
   }
 
@@ -145,54 +189,34 @@ function HeroUnit()
 
 
       </Grid>
+      <Typography variant="h6" className={classes.techTitle}>Technical Skills</Typography>
+      <Box display="flex" flexDirection="column" className={classes.mainTechGrid}
+        p={1}>
+        <Box display="flex" className={classes.techGrid}>
+          <Paper className={classes.paper}>PostgreSQL</Paper>
+          <Paper className={classes.paper}>Node.js</Paper>
+          <Paper className={classes.paper}>Express</Paper>
+          <Paper className={classes.paper}>REST API</Paper>
+        </Box>
+        <Box display="flex" className={classes.techGrid}>
+          <Paper className={classes.paper}>React</Paper>
+          <Paper className={classes.paper}>Redux</Paper>
+          <Paper className={classes.paper}>HTML</Paper>
+          <Paper className={classes.paper}>CSS</Paper>
+        </Box>
 
-
-
-      <Grid item xs={12} className={classes.techGrid} >
-        <Typography variant="h6" style={{ color: "white" }}>Technical Skills</Typography>
-
-        <Grid container spacing={1} style={{ textAlign: "center", marginTop: "1%" }}>
-
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>Postgres</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>Node.js</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>Express</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>REST API</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>React</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>Redux</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>HTML</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>CSS</Paper>
-          </Grid>
-
-        </Grid>
+      </Box>
+      <Box display="flex" flexDirection="row"
+        className={classes.buttonGrid}
+        component={motion.div} whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.32 }
+        }}
+        whileTap={{ scale: 0.8 }} >
         <a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
-          <Grid container spacing={1} style={{ textAlign: "center", marginLeft: "25%", marginTop: "1%" }} component={motion.div} whileHover={{
-            scale: 1.1,
-            transition: { duration: 0.32 }
-          }} whileTap={{ scale: 0.8 }} >
+          <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper></a>
 
-            <Grid item xs={6}>
-
-              <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper>
-            </Grid>
-          </Grid>
-        </a>
-
-      </Grid>
+      </Box>
     </Grid >
 
 

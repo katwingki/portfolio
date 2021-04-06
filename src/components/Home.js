@@ -17,7 +17,7 @@ const defaultPropsContactMe = {
   style: { width: '100%', height: '35rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
 };
 const defaultPropsFooter = {
-  style: { width: '100%', height: '5rem', background: 'black', transform: 'skewY(-4.5deg)', padding: "50px 0" },
+  style: { width: '100%', height: '1.5rem', background: 'black', transform: 'skewY(-9.5deg)', padding: "50px 0" },
 };
 
 
@@ -42,12 +42,8 @@ function Home()
         <h2 style={{ color: "white", transform: 'skewY(-4.5deg)' }}>ContactMe </h2>
       </Box>
       <Box display="flex" justifyContent="center" {...defaultPropsFooter}>
-
-        <Typography variant="subtitle2" style={{ color: "white", transform: 'skewY(4.5deg)', marginTop: "2%" }}> © {new Date().getFullYear()} Kathryn Lam. All rights reserved.</Typography>
+        <Typography variant="subtitle2" style={{ color: "white", transform: 'skewY(9.5deg)' }}> © {new Date().getFullYear()} Kathryn Lam. All rights reserved.</Typography>
       </Box>
-
-
-
     </div >
 
   )
