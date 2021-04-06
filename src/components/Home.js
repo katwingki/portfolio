@@ -15,12 +15,11 @@ const defaultPropsProjects = {
   style: { width: '100%', height: '45rem', background: 'black', transform: 'skewY(-4.5deg)' },
 };
 const defaultPropsContactMe = {
-  style: { width: '100%', height: '18rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
+  style: { width: '100%', height: '19rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
 };
 const defaultPropsFooter = {
   style: { width: '100%', height: '1.5rem', background: 'black', transform: 'skewY(-9.5deg)', padding: "50px 0" },
 };
-
 
 
 function Home()
