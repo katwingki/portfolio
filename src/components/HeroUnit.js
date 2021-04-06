@@ -88,7 +88,14 @@ function HeroUnit()
         <source src={backgroundVideo} type="video/mp4" />
       </video>
 
-      <Grid item xs={12} className={classes.intro} component={motion.div} animate={{ rotate: 360 }}>
+      <Grid item xs={12} className={classes.intro} component={motion.div} animate={{ y: ["10%", "-100%"] }} transition={
+        {
+          y: {
+            duration: 0.5,
+            yoyo: 0.9,
+            ease: "easeOut",
+          }
+        }}>
         <Typography variant="h3" style={{ color: "white" }}>Kathryn Lam</Typography>
 
         <Typography variant="h6" style={{ color: "white" }}>Motivate and passionate Software Engineer who is ready to contribute her problem-solving and skills.Motivate and passionate Software Engineer who is ready to contribute her problem-solving and skills.</Typography>
@@ -171,19 +178,21 @@ function HeroUnit()
             <Paper className={classes.paper}>CSS</Paper>
           </Grid>
 
-
         </Grid>
-        <Grid container spacing={1} style={{ textAlign: "center", marginLeft: "25%", marginTop: "1%" }}>
+        <a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+          <Grid container spacing={1} style={{ textAlign: "center", marginLeft: "25%", marginTop: "1%" }} component={motion.div} whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.32 }
+          }} whileTap={{ scale: 0.8 }} >
 
-          <Grid item xs={6}>
+            <Grid item xs={6}>
 
-            <Paper className={classes.button}><a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}> <Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></a></Paper>
+              <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper>
+            </Grid>
           </Grid>
-        </Grid>
+        </a>
 
       </Grid>
-
-
     </Grid >
 
 

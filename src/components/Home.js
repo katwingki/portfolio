@@ -8,6 +8,7 @@ import backgroundVideo from '../components/video/background.mp4';
 
 import '../App.css';
 import HeroUnit from "./HeroUnit";
+import { Typography } from "@material-ui/core";
 const defaultPropsProjects = {
   //background: 'linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)'
   style: { width: '100%', height: '45rem', background: 'black', transform: 'skewY(-4.5deg)' },
@@ -42,7 +43,7 @@ function Home()
       </Box>
       <Box display="flex" justifyContent="center" {...defaultPropsFooter}>
 
-        <h2 style={{ color: "white", transform: 'skewY(4.5deg)' }}>Footer</h2>
+        <Typography variant="subtitle2" style={{ color: "white", transform: 'skewY(4.5deg)', marginTop: "2%" }}> © {new Date().getFullYear()} Kathryn Lam. All rights reserved.</Typography>
       </Box>
 
 
