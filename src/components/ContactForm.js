@@ -91,7 +91,7 @@ const ContactForm = () =>
     <ScrollableAnchor id={'contact-block'}>
 
       <div className={classes.main}>
-        <Typography variant="h6" className={classes.title}> Send me a message: </Typography>
+        <Typography variant="h6" className={classes.title}>Send me a message</Typography>
         <Box display="flex" flexDirection="column" className={classes.mainForm}
           p={1}>
           <form className={classes.form}>
