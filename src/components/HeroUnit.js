@@ -19,23 +19,13 @@ import resume from '../components/resume/Kathryn_Lam_Resume.pdf'
 
 
 const useStyles = makeStyles((theme) => ({
-
-  paper: {
-    padding: theme.spacing(1),
-    width: "10vw",
-    margin: "2%",
-    textAlign: 'center',
-    color: "black",
-    fontWeight: "bold",
-    '@media (max-width:968px)': {
-      width: "25vw",
-    },
-
-  },
   button: {
     background: "#ceddff",
-    marginTop: "1%",
-    width: "43vw"
+    marginTop: "1.5%",
+    width: "43vw",
+    borderStyle: "solid",
+    borderWidth: "1%",
+    borderColor: "#91a1c9"
   },
   buttonGrid: {
     position: "absolute",
@@ -45,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     width: "80vw",
     '@media (max-width:968px)': {
       width: "25vw",
-      top: "87%",
+      top: "89%",
     },
   },
   mainTechGrid: {
@@ -70,9 +60,23 @@ const useStyles = makeStyles((theme) => ({
     top: "15%",
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      top: "3%",
+      top: "-1%",
     },
 
+  },
+  paper: {
+    padding: theme.spacing(1),
+    width: "10vw",
+    margin: "2%",
+    textAlign: 'center',
+    color: "black",
+    borderWidth: '2%',
+    borderColor: "#e1eaff",
+    borderStyle: "solid",
+    fontWeight: "bold",
+    '@media (max-width:968px)': {
+      width: "25vw",
+    },
   },
   techGrid: {
     textAlign: "center",

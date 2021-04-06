@@ -27,8 +27,11 @@ const useStyles = makeStyles((theme) => ({
   },
   mainForm: {
     width: "100%",
-    background: "#ceddff",
+    backgroundColor: "#ceddff",
     borderRadius: "25px",
+    borderColor: "white",
+    borderWidth: "4%",
+    borderStyle: "solid",
     transform: 'skewY(-4.5deg)',
   },
   form: {

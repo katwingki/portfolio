@@ -10,9 +10,10 @@ import '../App.css';
 import HeroUnit from "./HeroUnit";
 import { Typography } from "@material-ui/core";
 import ContactForm from "./ContactForm";
+import Projects from "./Projects";
 const defaultPropsProjects = {
   //background: 'linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)'
-  style: { width: '100%', height: '45rem', background: 'black', transform: 'skewY(-4.5deg)' },
+  style: { width: '100%', height: '90em', background: 'black', transform: 'skewY(-4.5deg)' },
 };
 const defaultPropsContactMe = {
   style: { width: '100%', height: '19rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
@@ -31,7 +32,8 @@ function Home()
       </Box>
 
       <Box display="flex" justifyContent="center" {...defaultPropsProjects}>
-        <h2 style={{ color: "white", transform: 'skewY(4.5deg)' }}>Projects</h2>
+        {/* <h2 style={{ color: "white", transform: 'skewY(4.5deg)' }}>Projects</h2> */}
+        <Projects />
       </Box>
       <Box display="flex" justifyContent="center"  {...defaultPropsContactMe}>
         {/* <Box borderRadius="50%" {...defaultProps} />
