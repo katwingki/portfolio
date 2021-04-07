@@ -35,11 +35,8 @@ export const projects = [
     descriptions: [
       'BrainTeez is a mobile educational application built within 2.5 weeks by a team of three developers. Our goal is to create a holistic learning application that provides a variety of leveled games and a real-time multiplayer game room that engage many parts of the child’s brain at once.',
 
-      'Currently, there are three different leveled games. The first is a simple addition game that is rendered with eye-catching pizazz. The second game strengthens logical skills and pattern-matching abilities by sorting a series of draggable circles into boxes by their color. The third game relies on the players’ memory to match pairs of cards with the same animal.',
-      'All three games are progressively harder at each level. We believe the balance of shapes, numbers, colors, and sounds in these games will simulate new connections in the child’s brain. Finally, the real-time multiplayer game room allows the teacher to administer contests to evaluate the students’ performance.',
-
-      ' I am solely responsible for Firebase Authentication and real-time multiplayer game room using CloudFirestore.',
-      'Technologies: Firebase, Firestore, React Native, Expo, JavaScript, and Redux.',
+      'Currently, there are three different leveled games.We believe the balance of shapes, numbers, colors, and sounds in these games will simulate new connections in the child’s brain. Finally, the real-time multiplayer game room allows the teacher to administer contests to evaluate the students’ performance.',
+      'I am solely responsible for Firebase Authentication and real-time multiplayer game room using CloudFirestore.'
     ],
   },
   {

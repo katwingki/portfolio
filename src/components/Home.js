@@ -13,7 +13,7 @@ import ContactForm from "./ContactForm";
 import Projects from "./Projects";
 const defaultPropsProjects = {
   //background: 'linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)'
-  style: { width: '100%', height: '90em', background: 'black', transform: 'skewY(-4.5deg)' },
+  style: { width: '100%', height: '83rem', background: 'black', transform: 'skewY(-4.5deg)' },
 };
 const defaultPropsContactMe = {
   style: { width: '100%', height: '19rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
