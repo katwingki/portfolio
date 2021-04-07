@@ -116,7 +116,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-evenly",
-    margin: "0.2%",
+    marginTop: "2%",
     '@media (max-width:968px)': {
       //flexDirection: "column"
       width: "80%"
