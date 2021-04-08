@@ -5,6 +5,7 @@ import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import { Box, TextField, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 configureAnchors({ offset: -160, scrollDuration: 200 });
+
 const useStyles = makeStyles((theme) => ({
   button: {
     width: "10vw",

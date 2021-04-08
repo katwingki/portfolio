@@ -1,18 +1,12 @@
 import React from "react";
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
-import { motion } from "framer-motion";
-import backgroundVideo from '../components/video/background.mp4';
-
-
 import '../App.css';
 import HeroUnit from "./HeroUnit";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
-
+import Box from '@material-ui/core/Box';
 import ContactForm from "./ContactForm";
 import Projects from "./Projects";
+
 const useStyles = makeStyles((theme) => ({
   projects: {
     width: '100%',
@@ -22,35 +16,28 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     '@media (max-width:968px)': {
-      //flexDirection: "column"
       height: "320vh"
     },
-
   },
-
-}))
-
-const defaultPropsProjects = {
-  //background: 'linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)'
-  projects: {
+  contactMe: {
     width: '100%',
-    height: "240vh",
-    maxHeight: "340vh",
-
-    background: 'black',
-    transform: 'skewY(-4.5deg)',
+    height: '17rem',
+    background: '#0e1830',
+    transform: 'skewY(4.5deg)',
+    padding: "50px 0",
     display: "flex",
-    justifyContent: "center",
-
+    justifyContent: "center"
   },
-};
-const defaultPropsContactMe = {
-  style: { width: '100%', height: '19rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
-};
-const defaultPropsFooter = {
-  style: { width: '100%', height: '1.5rem', background: 'black', transform: 'skewY(-9.5deg)', padding: "50px 0" },
-};
-
+  footer: {
+    width: '100%',
+    height: '1.5rem',
+    background: 'black',
+    transform: 'skewY(-9.5deg)',
+    padding: "50px 0",
+    display: "flex",
+    justifyContent: "center"
+  }
+}))
 
 function Home()
 {
@@ -60,25 +47,18 @@ function Home()
       <Box style={{ position: "relative" }}>
         <HeroUnit />
       </Box>
-
       <Box className={classes.projects}>
-        {/* <h2 style={{ color: "white", transform: 'skewY(4.5deg)' }}>Projects</h2> */}
         <Projects />
       </Box>
-      <Box display="flex" justifyContent="center"  {...defaultPropsContactMe}>
-        {/* <Box borderRadius="50%" {...defaultProps} />
-        <Box borderRadius="borderRadius" {...defaultProps} />
-        <Box borderRadius={16} {...defaultProps} /> */}
-
+      <Box display="flex" justifyContent="center" className={classes.contactMe}>
         <ContactForm />
       </Box>
-      <Box display="flex" justifyContent="center" {...defaultPropsFooter}>
+      <Box className={classes.footer}>
         <Typography variant="subtitle2" style={{ color: "white", transform: 'skewY(9.5deg)' }}>
           © {new Date().getFullYear()} Kathryn Lam. All rights reserved.
         </Typography>
       </Box>
     </div >
-
   )
 }
 
