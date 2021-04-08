@@ -8,17 +8,6 @@ import ContactForm from "./ContactForm";
 import Projects from "./Projects";
 
 const useStyles = makeStyles((theme) => ({
-  projects: {
-    width: '100%',
-    height: "235vh",
-    background: 'black',
-    transform: 'skewY(-4.5deg)',
-    display: "flex",
-    justifyContent: "center",
-    '@media (max-width:968px)': {
-      height: "320vh"
-    },
-  },
   contactMe: {
     width: '100%',
     height: '17rem',
@@ -36,7 +25,16 @@ const useStyles = makeStyles((theme) => ({
     padding: "50px 0",
     display: "flex",
     justifyContent: "center"
-  }
+  },
+  projects: {
+    width: '100%',
+    paddingBottom: "5%",
+    background: 'black',
+    transform: 'skewY(-4.5deg)',
+    display: "flex",
+    justifyContent: "center",
+
+  },
 }))
 
 function Home()
@@ -44,7 +42,7 @@ function Home()
   const classes = useStyles();
   return (
     <div className="App">
-      <Box style={{ position: "relative" }}>
+      <Box style={{ position: "relative", display: "flex" }}>
         <HeroUnit />
       </Box>
       <Box className={classes.projects}>

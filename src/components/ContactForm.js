@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     width: "20vw",
     minHeight: "3.5vh",
     fontFamily: "roboto",
+    borderColor: "white",
     '@media (max-width:968px)': {
       width: "58vw",
     },
