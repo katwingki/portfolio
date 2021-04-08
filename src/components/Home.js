@@ -9,11 +9,40 @@ import backgroundVideo from '../components/video/background.mp4';
 import '../App.css';
 import HeroUnit from "./HeroUnit";
 import { Typography } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
+
 import ContactForm from "./ContactForm";
 import Projects from "./Projects";
+const useStyles = makeStyles((theme) => ({
+  projects: {
+    width: '100%',
+    height: "235vh",
+    background: 'black',
+    transform: 'skewY(-4.5deg)',
+    display: "flex",
+    justifyContent: "center",
+    '@media (max-width:968px)': {
+      //flexDirection: "column"
+      height: "320vh"
+    },
+
+  },
+
+}))
+
 const defaultPropsProjects = {
   //background: 'linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)'
-  style: { width: '100%', height: '83rem', background: 'black', transform: 'skewY(-4.5deg)' },
+  projects: {
+    width: '100%',
+    height: "240vh",
+    maxHeight: "340vh",
+
+    background: 'black',
+    transform: 'skewY(-4.5deg)',
+    display: "flex",
+    justifyContent: "center",
+
+  },
 };
 const defaultPropsContactMe = {
   style: { width: '100%', height: '19rem', background: '#0e1830', transform: 'skewY(4.5deg)', padding: "50px 0" },
@@ -25,13 +54,14 @@ const defaultPropsFooter = {
 
 function Home()
 {
+  const classes = useStyles();
   return (
     <div className="App">
       <Box style={{ position: "relative" }}>
         <HeroUnit />
       </Box>
 
-      <Box display="flex" justifyContent="center" {...defaultPropsProjects}>
+      <Box className={classes.projects}>
         {/* <h2 style={{ color: "white", transform: 'skewY(4.5deg)' }}>Projects</h2> */}
         <Projects />
       </Box>

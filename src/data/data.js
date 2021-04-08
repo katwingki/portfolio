@@ -36,8 +36,10 @@ export const projects = [
       'BrainTeez is a mobile educational application built within 2.5 weeks by a team of three developers. Our goal is to create a holistic learning application that provides a variety of leveled games and a real-time multiplayer game room that engages many parts of the child’s brain at once.',
 
       'Currently, there are three different leveled games. We believe the balance of shapes, numbers, colors, and sounds in these games will stimulate new connections in the child’s brain. Finally, the real-time multiplayer game room allows the teacher to administer contests to evaluate the students’ performance.',
-      'I was solely responsible for Firebase Authentication as well as user profile storage and the real-time multiplayer game room using Cloud Firestore.'
+      'I was solely responsible for Firebase Authentication as well as user profile storage and the real-time multiplayer game room using Cloud Firestore.',
+
     ],
+    tech: ["React Native", "Expo", "Firebase", "Redux"]
   },
   {
     title: 'Minions AI',
@@ -54,10 +56,9 @@ export const projects = [
 
       'In this application, Minions and kids can ask each other questions, and an automated response is populated based on the inputs. After accumulating a strong foundation in building PERN Stack apps through agile methodologies and daily pair-programming, I decided to challenge myself with some new technologies such as React Native and Expo for this solo project.',
 
-      `One of the significant challenges was the natural.js library's incompatibility with Expo. I worked around it by standardizing the data in React through the process of trial and error.`,
+      `One of the significant challenges was the natural.js library's incompatibility with Expo. I worked around it by standardizing the data in React through the process of trial and error.`],
 
-      'Technologies: React Native, Expo, JavaScript, and React',
-    ],
+    tech: ["React", "React Native", "Expo", "JavaScript"]
   },
   {
     title: 'HYKM Bookstore',
@@ -71,7 +72,9 @@ export const projects = [
       'HYKM Bookstore is a mock, fully functional e-commerce website built within 7 days by a team of 4 developers. The site sells textbooks with enhanced admin, user, and security features. The application was deployed to Heroku via Travis CI for continuous integration.',
       'The application was built from the ground up using all the technologies that we acquired throughout the course. This was our first group project as developers; we followed the Agile Software Development methodology to ensure all the requirements were met. We met daily as a group to update each other on our progress and divide the daily tasks through the GitHub project board. ',
       'For the more challenging part, we often pair-program to maximize efficiency.I was solely responsible for Heroku deployment and setting up authentication with Google using OAuth. ',
-      'Technologies:  Node.js, PostgresSQL, Sequelize, Express, React, Redux, HTML, CSS, and OAuth',
+
+
     ],
+    tech: ["PostgreSQL", "Node.js", "REST API", "React"],
   },
 ];
