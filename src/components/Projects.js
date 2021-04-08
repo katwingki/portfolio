@@ -206,6 +206,60 @@ const Projects = () =>
           </Box>
         </Box>
 
+        <Box display="flex" flexDirection="column" className={classes.mainProject}
+          p={1} component={motion.div} whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.3 }
+          }}>
+          <Box display="flex" className={classes.projectRow}>
+            <Box display="flex" className={classes.projectRowLeft} >
+              <Typography variant="h6" className={classes.subtitle}> {projects[2].title}</Typography>
+              <Typography variant="body2" className={classes.body2}> {projects[2].descriptions[0]}</Typography>
+              <Typography variant="body2" className={classes.body2}> {projects[2].descriptions[1]}</Typography>
+              <Typography variant="body2" className={classes.body2}> {projects[2].descriptions[2]}</Typography>
+              <Box display="flex" flexDirection="column" className={classes.mainTechGrid}
+                p={1} component={motion.div}
+
+
+                animate={{ y: ["10%", "-200%"] }} transition={
+                  {
+                    y: {
+                      duration: 0.5,
+                      yoyo: 0.9,
+                      ease: "easeOut",
+                    }
+                  }}>
+                <Box display="flex" className={classes.techGrid}>
+                  <Paper className={classes.paper}>React Native</Paper>
+                  <Paper className={classes.paper}>Expo</Paper>
+                  <Paper className={classes.paper}>Firebase</Paper>
+                  <Paper className={classes.paper}>JavaScript</Paper>
+                </Box>
+              </Box>
+              <Box className={classes.socialIcons}>
+                <a className={classes.icon} href={projects[1].link}>
+                  <AiOutlineLink />
+                </a>
+                <a className={classes.icon} href={projects[0].github}>
+                  <AiFillGithub />
+                </a>
+                <a className={classes.icon} href={projects[0].youtube}>
+                  <TiSocialYoutubeCircular />
+                </a>
+              </Box>
+            </Box>
+            <Box display="flex" className={classes.projectRowRight}>
+              <iframe
+                src={projects[0].iframelink}
+                allow='autoplay; fullscreen; encrypted-media; picture-in-picture'
+                allowFullScreen
+                frameborder='3'
+                className={classes.mediaFrame}
+              ></iframe>
+            </Box>
+          </Box>
+        </Box>
+
 
       </div>
     </ScrollableAnchor>
