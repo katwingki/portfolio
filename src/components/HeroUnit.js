@@ -19,29 +19,19 @@ import resume from '../components/resume/Kathryn_Lam_Resume.pdf'
 
 
 const useStyles = makeStyles((theme) => ({
-
-  paper: {
-    padding: theme.spacing(1),
-    width: "10vw",
-    margin: "2%",
-    textAlign: 'center',
-    color: "black",
-    fontWeight: "bold",
-    '@media (max-width:968px)': {
-      width: "25vw",
-    },
-
-  },
   button: {
     background: "#ceddff",
-    marginTop: "1%",
-    width: "43vw"
+    marginTop: "1.5%",
+    width: "43vw",
+    borderStyle: "solid",
+    borderWidth: "1%",
+    borderColor: "#91a1c9"
   },
   buttonGrid: {
     position: "absolute",
     textAlign: "center",
     top: "78%",
-    left: "40%",
+    left: "32%",
     width: "80vw",
     '@media (max-width:968px)': {
       width: "25vw",
@@ -49,17 +39,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mainTechGrid: {
-    width: '80vw',
+    width: '50vw',
     position: "absolute",
-    top: "50%",
-    left: "8%",
+    top: "45%",
+    left: "18%",
     flexDirection: "column",
     textAlign: "center",
     marginLeft: "9%",
     borderRadius: "10px",
     justifyContent: "space-evenly",
     '@media (max-width:968px)': {
-      top: "60%",
+      top: "50%",
       flexDirection: "row"
     },
   },
@@ -67,16 +57,30 @@ const useStyles = makeStyles((theme) => ({
     width: '90vw',
     position: "absolute",
     textAlign: "left",
-    top: "15%",
+    top: "1%",
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      top: "3%",
+      top: "-5%",
     },
 
   },
+  paper: {
+    padding: theme.spacing(1),
+    width: "10vw",
+    margin: "2%",
+    textAlign: 'center',
+    color: "black",
+    borderWidth: '2%',
+    borderColor: "#e1eaff",
+    borderStyle: "solid",
+    fontWeight: "bold",
+    '@media (max-width:968px)': {
+      width: "25vw",
+    },
+  },
   techGrid: {
     textAlign: "center",
-    marginLeft: "9%",
+    marginLeft: "5%",
     margineRight: "2%",
     borderRadius: "10px",
     justifyContent: "space-evenly",
@@ -89,12 +93,12 @@ const useStyles = makeStyles((theme) => ({
   techTitle: {
     width: '80vw',
     position: "absolute",
-    top: "45%",
-    left: "56%",
+    top: "40%",
+    left: "50%",
     color: "white",
     borderRadius: "10px",
     '@media (max-width:968px)': {
-      top: "55%",
+      top: "45%",
       left: "42%",
     },
   },
