@@ -71,9 +71,7 @@ export const projects = [
     descriptions: [
       'HYKM Bookstore is a mock, fully functional e-commerce website built within 7 days by a team of 4 developers. The site sells textbooks with enhanced admin, user, and security features. The application was deployed to Heroku via Travis CI for continuous integration.',
       'The application was built from the ground up using all the technologies that we acquired throughout the course. This was our first group project as developers; we followed the Agile Software Development methodology to ensure all the requirements were met. We met daily as a group to update each other on our progress and divide the daily tasks through the GitHub project board. ',
-      'For the more challenging part, we often pair-program to maximize efficiency.I was solely responsible for Heroku deployment and setting up authentication with Google using OAuth. ',
-
-
+      'For the more challenging parts, we pair-programmed to maximize efficiency. I was solely responsible for Heroku deployment and setting up authentication with Google using OAuth.',
     ],
     tech: ["PostgreSQL", "Node.js", "REST API", "React"],
   },

@@ -144,10 +144,15 @@ function HeroUnit()
             ease: "easeOut",
           }
         }}>
-        <Typography variant="h3" style={{ color: "white" }}>Kathryn Lam</Typography>
+        <Typography variant="h4" style={{ color: "white" }}>Kathryn Lam</Typography>
+        {/* A motivated and passionate Software Engineer who is ready to contribute my problem-solving and technical skills. */}
+        <Typography variant="subtitle" style={{ color: "white", fontStyle: "italic", fontWeight: "bold" }}>As a founder and operator of a retail business turned Software Engineer, I am an example of how with eagerness and the right resources, any skill can be developed.
 
-        <Typography variant="h6" style={{ color: "white" }}>Motivate and passionate Software Engineer who is ready to contribute her problem-solving and skills.Motivate and passionate Software Engineer who is ready to contribute her problem-solving and skills.</Typography>
-        {/* <Grid container spacing={1} style={{ textAlign: "center", marginTop: "1%" }}> */}
+        Despite my efficiency and success as an individual, I also welcome team collaboration so we can learn from our combined knowledge to devise bold ideas.
+      <br />
+          <br />
+       My career goal is to build applications that satisfy the targeted user experience, integrate seamlessly with the big picture, and work reliably long-term.
+       </Typography>
 
         <Grid item xs={3} className={classes.socialIconTop} component={motion.div} whileHover={{
           scale: 1.4,
