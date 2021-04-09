@@ -9,6 +9,13 @@ export const aboutMe = {
     'The teaching fellowship at Fullstack Academy further deepens my knowledge and fulfill my passion as a mentor where I can help others understand new concepts and achieve their goals.Technologies are evolving at a lightning speed, I am ready and looking forward to any new challenges that I will be facing as a Software Engineer. I am particularly interested in working as a team as I believe collaboration is the key to success. My goal is to develop products that not only satisfy but exceed client’s expectations.     ',
 };
 
+export const socialMedia = {
+  linkedin: 'https://www.linkedin.com/in/kathrynlam/',
+  gitHub: 'https://github.com/katwingki',
+  email: 'mailto: katwingki@gmail.com',
+  medium: 'https://medium.com/swlh/expo-firebase-authentication-cloud-firestore-using-async-await-react-hooks-700920ad4b2b'
+}
+
 export const work = [
   {
     company: 'Fullstack Academy',
