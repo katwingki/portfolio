@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolioTwo/static/css/main.36095f7c.chunk.css",
-    "main.js": "/portfolioTwo/static/js/main.be47dc81.chunk.js",
-    "main.js.map": "/portfolioTwo/static/js/main.be47dc81.chunk.js.map",
-    "runtime-main.js": "/portfolioTwo/static/js/runtime-main.20aa8d28.js",
-    "runtime-main.js.map": "/portfolioTwo/static/js/runtime-main.20aa8d28.js.map",
-    "static/js/2.7114a141.chunk.js": "/portfolioTwo/static/js/2.7114a141.chunk.js",
-    "static/js/2.7114a141.chunk.js.map": "/portfolioTwo/static/js/2.7114a141.chunk.js.map",
-    "static/js/3.09808c1c.chunk.js": "/portfolioTwo/static/js/3.09808c1c.chunk.js",
-    "static/js/3.09808c1c.chunk.js.map": "/portfolioTwo/static/js/3.09808c1c.chunk.js.map",
-    "index.html": "/portfolioTwo/index.html",
-    "static/css/main.36095f7c.chunk.css.map": "/portfolioTwo/static/css/main.36095f7c.chunk.css.map",
-    "static/js/2.7114a141.chunk.js.LICENSE.txt": "/portfolioTwo/static/js/2.7114a141.chunk.js.LICENSE.txt",
-    "static/media/Kathryn_Lam_Resume.7b8c5765.pdf": "/portfolioTwo/static/media/Kathryn_Lam_Resume.7b8c5765.pdf",
-    "static/media/background.2d11dec9.mp4": "/portfolioTwo/static/media/background.2d11dec9.mp4"
+    "main.css": "/portfolio/static/css/main.36095f7c.chunk.css",
+    "main.js": "/portfolio/static/js/main.be47dc81.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.be47dc81.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.1c93c787.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1c93c787.js.map",
+    "static/js/2.3ffc2936.chunk.js": "/portfolio/static/js/2.3ffc2936.chunk.js",
+    "static/js/2.3ffc2936.chunk.js.map": "/portfolio/static/js/2.3ffc2936.chunk.js.map",
+    "static/js/3.09808c1c.chunk.js": "/portfolio/static/js/3.09808c1c.chunk.js",
+    "static/js/3.09808c1c.chunk.js.map": "/portfolio/static/js/3.09808c1c.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.36095f7c.chunk.css.map": "/portfolio/static/css/main.36095f7c.chunk.css.map",
+    "static/js/2.3ffc2936.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3ffc2936.chunk.js.LICENSE.txt",
+    "static/media/Kathryn_Lam_Resume.7b8c5765.pdf": "/portfolio/static/media/Kathryn_Lam_Resume.7b8c5765.pdf",
+    "static/media/background.2d11dec9.mp4": "/portfolio/static/media/background.2d11dec9.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.20aa8d28.js",
-    "static/js/2.7114a141.chunk.js",
+    "static/js/runtime-main.1c93c787.js",
+    "static/js/2.3ffc2936.chunk.js",
     "static/css/main.36095f7c.chunk.css",
     "static/js/main.be47dc81.chunk.js"
   ]
