@@ -1,18 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import { Box, Button, Typography } from '@material-ui/core';
-
 import { motion } from "framer-motion";
-import
-{
+import {
   AiFillMail,
   AiFillLinkedin,
   AiFillMediumSquare,
   AiFillGithub,
 } from 'react-icons/ai';
-
 import './HeroUnit.css';
 import backgroundVideo from '../components/video/background.mp4';
 import resume from '../components/resume/Kathryn_Lam_Resume.pdf'
@@ -25,42 +21,50 @@ const useStyles = makeStyles((theme) => ({
     width: "43vw",
     borderStyle: "solid",
     borderWidth: "1%",
-    borderColor: "#91a1c9"
-  },
-  buttonGrid: {
-    position: "absolute",
-    textAlign: "center",
-    top: "78%",
-    left: "32%",
-    width: "80vw",
+    borderColor: "#91a1c9",
     '@media (max-width:968px)': {
-      width: "25vw",
-      top: "87%",
+      marginLeft: "-14%"
+    },
+  },
+  heroSecondRow: {
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    top: "42%",
+    marginLeft: "10%",
+    '@media (max-width:368px)': {
+      top: "45%",
+    },
+  },
+  mainSecondRow: {
+    display: "flex",
+    flexDirection: "row",
+    '@media (max-width:668px)': {
+      flexDirection: "column"
     },
   },
   mainTechGrid: {
-    width: '50vw',
-    position: "absolute",
-    top: "45%",
-    left: "18%",
     flexDirection: "column",
     textAlign: "center",
-    marginLeft: "9%",
+    alignItems: "center",
+    paddingLeft: "15%",
+
     borderRadius: "10px",
     justifyContent: "space-evenly",
     '@media (max-width:968px)': {
-      top: "50%",
-      flexDirection: "row"
+      padding: "0%"
     },
   },
   intro: {
     width: '90vw',
     position: "absolute",
     textAlign: "left",
-    top: "1%",
+    display: "flex",
+    flexDirection: "column",
+    top: "8%",
     marginLeft: "4%",
     '@media (max-width:968px)': {
-      top: "-5%",
+      top: "-1%",
     },
 
   },
@@ -80,63 +84,59 @@ const useStyles = makeStyles((theme) => ({
   },
   techGrid: {
     textAlign: "center",
-    marginLeft: "5%",
-    margineRight: "2%",
-    borderRadius: "10px",
-    justifyContent: "space-evenly",
-    '@media (max-width:968px)': {
-      maxWidth: "20vh",
+    '@media (max-width:668px)': {
+      maxWidth: "60vh",
       flexWrap: "wrap",
-      marginLeft: "2%",
+
     },
   },
   techTitle: {
-    width: '80vw',
-    position: "absolute",
-    top: "40%",
-    left: "50%",
     color: "white",
     borderRadius: "10px",
     '@media (max-width:968px)': {
-      top: "45%",
-      left: "42%",
-    },
-  },
-  socialIconTop: {
-    marginTop: "2%",
-    marginLeft: "4%",
-    '@media (max-width:968px)': {
-      marginTop: "13%",
-      marginLeft: "2%",
+      marginLeft: "-14%"
     },
 
+
   },
-  socialIconOther: {
-    marginLeft: "4%",
+  socialIconWrap: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
     '@media (max-width:968px)': {
-      marginLeft: "2%"
+      flexDirection: "row",
+      marginLeft: "-14%"
+    },
+  },
+  videoBkg: {
+    width: '100%',
+    height: "85vh",
+    objectFit: "cover",
+    position: "relative",
+    zIndex: 0, opacity: "0.85",
+    '@media (max-width:668px)': {
+      height: "130vh"
     },
   }
 
 }));
 
-function HeroUnit()
-{
+function HeroUnit() {
   const classes = useStyles();
 
   return (
-
-    <Grid container spacing={2}>
+    <Box>
       <video
         autoPlay
         loop
         muted
-        style={{ width: '100%', height: "85vh", objectFit: "cover", position: "relative", zIndex: 0, opacity: "0.85" }}
+        className={classes.videoBkg}
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
 
-      <Grid item xs={12} className={classes.intro} component={motion.div} animate={{ y: ["10%", "-100%"] }} transition={
+      <Box className={classes.intro} component={motion.div} animate={{ y: ["10%", "-100%"] }} transition={
         {
           y: {
             duration: 0.5,
@@ -144,84 +144,99 @@ function HeroUnit()
             ease: "easeOut",
           }
         }}>
-        <Typography variant="h3" style={{ color: "white" }}>Kathryn Lam</Typography>
+        <Typography variant="h4" style={{ color: "white", textShadow: "0.2px 0.2px #ffffff" }}>Kathryn Lam</Typography>
+        <Typography variant="subtitle" style={{ color: "white", fontStyle: "italic", fontWeight: "bold", textShadow: "0.2px 0.2px #ffffff" }}>As a founder and operator of a retail business turned Software Engineer, I am an example of how with eagerness and the right resources, any skill can be developed.
 
-        <Typography variant="h6" style={{ color: "white" }}>Motivate and passionate Software Engineer who is ready to contribute her problem-solving and skills.Motivate and passionate Software Engineer who is ready to contribute her problem-solving and skills.</Typography>
-        {/* <Grid container spacing={1} style={{ textAlign: "center", marginTop: "1%" }}> */}
-
-        <Grid item xs={3} className={classes.socialIconTop} component={motion.div} whileHover={{
-          scale: 1.4,
-          transition: { duration: 0.3 }
-        }} whileTap={{ scale: 0.8 }}>
-          <a
-            className='social-icon-link'
-            href='https://www.linkedin.com/in/kathrynlam/'
-          >
-            <AiFillLinkedin />
-          </a>
-        </Grid>
-        <Grid item xs={3} className={classes.socialIconOther} component={motion.div} whileHover={{
-          scale: 1.4,
-          transition: { duration: 0.3 }
-        }} whileTap={{ scale: 0.8 }}>
-          <a className='social-icon-link' href='https://github.com/katwingki'>
-            <AiFillGithub />
-          </a>
-        </Grid>
-        <Grid item xs={3} className={classes.socialIconOther} component={motion.div} whileHover={{
-          scale: 1.4,
-          transition: { duration: 0.3 }
-        }} whileTap={{ scale: 0.8 }}>
-          <a className='social-icon-link' href='mailto: katwingki@gmail.com'>
-            <AiFillMail />
-          </a>
-        </Grid>
-
-        <Grid item xs={3} sm={1} className={classes.socialIconOther} component={motion.div} whileHover={{
-          scale: 1.4,
-          transition: { duration: 0.3 }
-        }} whileTap={{ scale: 0.8 }}>
-          <a
-            className='social-icon-link'
-            href='https://medium.com/swlh/expo-firebase-authentication-cloud-firestore-using-async-await-react-hooks-700920ad4b2b'
-          >
-            <AiFillMediumSquare />
-          </a>
-        </Grid>
-
-        {/* </Grid> */}
-
-
-      </Grid>
-      <Typography variant="h6" className={classes.techTitle}>Technical Skills</Typography>
-      <Box display="flex" flexDirection="column" className={classes.mainTechGrid}
-        p={1}>
-        <Box display="flex" className={classes.techGrid}>
-          <Paper className={classes.paper}>PostgreSQL</Paper>
-          <Paper className={classes.paper}>Node.js</Paper>
-          <Paper className={classes.paper}>Express</Paper>
-          <Paper className={classes.paper}>REST API</Paper>
-        </Box>
-        <Box display="flex" className={classes.techGrid}>
-          <Paper className={classes.paper}>React</Paper>
-          <Paper className={classes.paper}>Redux</Paper>
-          <Paper className={classes.paper}>HTML</Paper>
-          <Paper className={classes.paper}>CSS</Paper>
-        </Box>
-
+        Despite my efficiency and success as an individual, I also welcome team collaboration so we can learn from our combined knowledge to devise bold ideas.
+      <br />
+          <br />
+       My career goal is to build applications that satisfy the targeted user experience, integrate seamlessly with the big picture, and work reliably long-term.
+       </Typography>
       </Box>
-      <Box display="flex" flexDirection="row"
-        className={classes.buttonGrid}
-        component={motion.div} whileHover={{
-          scale: 1.1,
-          transition: { duration: 0.32 }
-        }}
-        whileTap={{ scale: 0.8 }} >
-        <a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
-          <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper></a>
+      <Box className={classes.heroSecondRow}>
+        <Box display="flex" flexDirection="column" className={classes.mainSecondRow}
+          p={1}>
+          <Box className={classes.socialIconWrap} >
+            <Box display="flex" component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
+              <a
+                className='social-icon-link'
+                href='https://www.linkedin.com/in/kathrynlam/'
+              >
+                <AiFillLinkedin />
+              </a>
+            </Box>
+            <Box component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
+              <a className='social-icon-link' href='https://github.com/katwingki'>
+                <AiFillGithub />
+              </a>
+            </Box>
+            <Box component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
+              <a className='social-icon-link' href='mailto: katwingki@gmail.com'>
+                <AiFillMail />
+              </a>
+            </Box>
+            <Box component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
+              <a
+                className='social-icon-link'
+                href='https://medium.com/swlh/expo-firebase-authentication-cloud-firestore-using-async-await-react-hooks-700920ad4b2b'
+              >
+                <AiFillMediumSquare />
+              </a>
+            </Box>
+          </Box>
+          <Box display="flex" flexDirection="column" className={classes.mainTechGrid}
+            p={1}>
+            <Typography variant="h6" className={classes.techTitle}>Technical Skills</Typography>
+            <Box display="flex" className={classes.techGrid}>
+              <Paper className={classes.paper}>PostgreSQL</Paper>
+              <Paper className={classes.paper}>Node.js</Paper>
+              <Paper className={classes.paper}>Express</Paper>
+              <Paper className={classes.paper}>REST API</Paper>
+            </Box>
+            <Box display="flex" className={classes.techGrid}>
+              <Paper className={classes.paper}>React</Paper>
+              <Paper className={classes.paper}>Redux</Paper>
+              <Paper className={classes.paper}>HTML</Paper>
+              <Paper className={classes.paper}>CSS</Paper>
+            </Box>
 
+
+            <Box display="flex" flexDirection="row"
+
+              component={motion.div} whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.32 }
+              }}
+              whileTap={{ scale: 0.8 }} >
+              <a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+                <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper></a>
+
+            </Box>
+          </Box>
+        </Box>
       </Box>
-    </Grid >
+
+    </Box >
 
 
   );

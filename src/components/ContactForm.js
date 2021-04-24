@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-//import './ContactForm.css';
 import { db } from '../api/firebase';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
-import { Box, TextField, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 configureAnchors({ offset: -160, scrollDuration: 200 });
+
 const useStyles = makeStyles((theme) => ({
   button: {
     width: "10vw",
@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     width: "20vw",
     minHeight: "3.5vh",
     fontFamily: "roboto",
+    borderColor: "white",
     '@media (max-width:968px)': {
       width: "58vw",
     },
@@ -54,25 +55,21 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 
-const ContactForm = () =>
-{
+const ContactForm = () => {
   const classes = useStyles();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) =>
-  {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     if (!name) alert('Please enter your name');
     else if (!email) alert('Please enter your email');
     else if (!message) alert('Please enter a message');
-    else
-    {
-      try
-      {
+    else {
+      try {
         await db.collection('contactforms').add({
           name: name,
           email: email,
@@ -83,8 +80,7 @@ const ContactForm = () =>
         setMessage('');
         setLoading(false);
         alert('Your message has been submitted');
-      } catch (err)
-      {
+      } catch (err) {
         alert(err.message);
         setLoading(false);
       }
@@ -92,7 +88,6 @@ const ContactForm = () =>
   };
   return (
     <ScrollableAnchor id={'contact-block'}>
-
       <div className={classes.main}>
         <Typography variant="h6" className={classes.title}>Send me a message</Typography>
         <Box display="flex" flexDirection="column" className={classes.mainForm}
@@ -135,8 +130,6 @@ const ContactForm = () =>
           </form>
         </Box>
       </div>
-
-
     </ScrollableAnchor >
   );
 };

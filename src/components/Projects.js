@@ -4,7 +4,7 @@ import '../App.css';
 import { projects } from '../data/data';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 import { TiSocialYoutubeCircular } from 'react-icons/ti';
-import { Box, TextField, Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import { motion } from "framer-motion";
 
@@ -21,15 +21,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "5.5vh",
     color: "#0e1830",
     '@media (max-width:668px)': {
-      //flexDirection: "column"
       fontSize: "4.5vh"
     },
   },
   main: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",//X
-    justifyContent: "flex-start",//Y
+    alignItems: "center",
+    justifyContent: "flex-start",
     marginTop: "5%",
     marginBottom: "5%",
     transform: 'skewY(4.5deg)',
@@ -43,10 +42,8 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     marginTop: "2%",
     '@media (max-width:668px)': {
-      //flexDirection: "column"
       width: "80vw"
     },
-
   },
   mediaFrame: {
     position: "relative",
@@ -56,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
     '@media (max-width:668px)': {
       height: "200px"
     },
-
   },
   paper: {
     width: "12vw",
@@ -76,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",//X
+    alignItems: "center",
     margin: "1%",
     justifyContent: "flex-start",
     '@media (max-width:968px)': {
@@ -90,26 +86,23 @@ const useStyles = makeStyles((theme) => ({
     width: "60%",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",//X
-    justifyContent: "flex-start",//Y
+    alignItems: "center",
+    justifyContent: "flex-start",
     margin: "1%",
     '@media (max-width:968px)': {
       width: "90%"
     },
-
-
   },
   projectRowRight: {
     background: "#ceddff",
     width: "40%",
     display: "flex",
-    alignItems: "center",//X
-    justifyContent: "flex-start",//Y
+    alignItems: "center",
+    justifyContent: "flex-start",
     margin: "0.5%",
     '@media (max-width:968px)': {
       width: "90%"
     },
-
   },
   socialIcons: {
     width: "40%",
@@ -118,14 +111,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-evenly",
     marginTop: "2%",
     '@media (max-width:968px)': {
-      //flexDirection: "column"
       width: "80%"
     },
-
   },
   subtitle: {
     fontStyle: "bold",
-
   },
   techGrid: {
     borderRadius: "10px",
@@ -136,7 +126,6 @@ const useStyles = makeStyles((theme) => ({
       flexWrap: "wrap",
     },
   },
-
   title: {
     color: "white",
     fontWeight: "bold",
@@ -145,8 +134,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 
-const Projects = () =>
-{
+const Projects = () => {
   const classes = useStyles();
   return (
     <ScrollableAnchor id={'projects'}>
@@ -205,9 +193,6 @@ const Projects = () =>
             </Box>
           </Box>
         </Box>))}
-
-
-
       </div>
     </ScrollableAnchor>
   );

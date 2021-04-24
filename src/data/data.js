@@ -9,6 +9,13 @@ export const aboutMe = {
     'The teaching fellowship at Fullstack Academy further deepens my knowledge and fulfill my passion as a mentor where I can help others understand new concepts and achieve their goals.Technologies are evolving at a lightning speed, I am ready and looking forward to any new challenges that I will be facing as a Software Engineer. I am particularly interested in working as a team as I believe collaboration is the key to success. My goal is to develop products that not only satisfy but exceed client’s expectations.     ',
 };
 
+export const socialMedia = {
+  linkedin: 'https://www.linkedin.com/in/kathrynlam/',
+  gitHub: 'https://github.com/katwingki',
+  email: 'mailto: katwingki@gmail.com',
+  medium: 'https://medium.com/swlh/expo-firebase-authentication-cloud-firestore-using-async-await-react-hooks-700920ad4b2b'
+}
+
 export const work = [
   {
     company: 'Fullstack Academy',
@@ -71,9 +78,7 @@ export const projects = [
     descriptions: [
       'HYKM Bookstore is a mock, fully functional e-commerce website built within 7 days by a team of 4 developers. The site sells textbooks with enhanced admin, user, and security features. The application was deployed to Heroku via Travis CI for continuous integration.',
       'The application was built from the ground up using all the technologies that we acquired throughout the course. This was our first group project as developers; we followed the Agile Software Development methodology to ensure all the requirements were met. We met daily as a group to update each other on our progress and divide the daily tasks through the GitHub project board. ',
-      'For the more challenging part, we often pair-program to maximize efficiency.I was solely responsible for Heroku deployment and setting up authentication with Google using OAuth. ',
-
-
+      'For the more challenging parts, we pair-programmed to maximize efficiency. I was solely responsible for Heroku deployment and setting up authentication with Google using OAuth.',
     ],
     tech: ["PostgreSQL", "Node.js", "REST API", "React"],
   },
