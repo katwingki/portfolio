@@ -1,18 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import { Box, Button, Typography } from '@material-ui/core';
-
 import { motion } from "framer-motion";
-import
-{
+import {
   AiFillMail,
   AiFillLinkedin,
   AiFillMediumSquare,
   AiFillGithub,
 } from 'react-icons/ai';
-
 import './HeroUnit.css';
 import backgroundVideo from '../components/video/background.mp4';
 import resume from '../components/resume/Kathryn_Lam_Resume.pdf'
@@ -50,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
   mainTechGrid: {
     flexDirection: "column",
     textAlign: "center",
-    //justifyContent: "center",
     alignItems: "center",
     paddingLeft: "15%",
 
@@ -113,7 +108,6 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: "row",
       marginLeft: "-14%"
     },
-
   },
   videoBkg: {
     width: '100%',
@@ -128,8 +122,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-function HeroUnit()
-{
+function HeroUnit() {
   const classes = useStyles();
 
   return (
@@ -151,8 +144,8 @@ function HeroUnit()
             ease: "easeOut",
           }
         }}>
-        <Typography variant="h4" style={{ color: "white" }}>Kathryn Lam</Typography>
-        <Typography variant="subtitle" style={{ color: "white", fontStyle: "italic", fontWeight: "bold" }}>As a founder and operator of a retail business turned Software Engineer, I am an example of how with eagerness and the right resources, any skill can be developed.
+        <Typography variant="h4" style={{ color: "white", textShadow: "0.2px 0.2px #ffffff" }}>Kathryn Lam</Typography>
+        <Typography variant="subtitle" style={{ color: "white", fontStyle: "italic", fontWeight: "bold", textShadow: "0.2px 0.2px #ffffff" }}>As a founder and operator of a retail business turned Software Engineer, I am an example of how with eagerness and the right resources, any skill can be developed.
 
         Despite my efficiency and success as an individual, I also welcome team collaboration so we can learn from our combined knowledge to devise bold ideas.
       <br />
@@ -160,47 +153,49 @@ function HeroUnit()
        My career goal is to build applications that satisfy the targeted user experience, integrate seamlessly with the big picture, and work reliably long-term.
        </Typography>
       </Box>
-
       <Box className={classes.heroSecondRow}>
-
-
-
-
         <Box display="flex" flexDirection="column" className={classes.mainSecondRow}
           p={1}>
           <Box className={classes.socialIconWrap} >
-            <Box display="flex" component={motion.div} whileHover={{
-              scale: 1.4,
-              transition: { duration: 0.3 }
-            }} whileTap={{ scale: 0.8 }}>
+            <Box display="flex" component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
               <a
                 className='social-icon-link'
                 href='https://www.linkedin.com/in/kathrynlam/'
-
               >
                 <AiFillLinkedin />
               </a>
             </Box>
-            <Box component={motion.div} whileHover={{
-              scale: 1.4,
-              transition: { duration: 0.3 }
-            }} whileTap={{ scale: 0.8 }}>
+            <Box component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
               <a className='social-icon-link' href='https://github.com/katwingki'>
                 <AiFillGithub />
               </a>
             </Box>
-            <Box component={motion.div} whileHover={{
-              scale: 1.4,
-              transition: { duration: 0.3 }
-            }} whileTap={{ scale: 0.8 }}>
+            <Box component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
               <a className='social-icon-link' href='mailto: katwingki@gmail.com'>
                 <AiFillMail />
               </a>
             </Box>
-            <Box component={motion.div} whileHover={{
-              scale: 1.4,
-              transition: { duration: 0.3 }
-            }} whileTap={{ scale: 0.8 }}>
+            <Box component={motion.div}
+              whileHover={{
+                scale: 1.4,
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.8 }}>
               <a
                 className='social-icon-link'
                 href='https://medium.com/swlh/expo-firebase-authentication-cloud-firestore-using-async-await-react-hooks-700920ad4b2b'

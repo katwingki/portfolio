@@ -17,7 +17,7 @@
     "react-scrollable-anchor": "^0.6.1",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://katwingki.github.io/portfolioTwo",
+  "homepage": "https://katwingki.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
