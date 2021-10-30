@@ -1,7 +1,7 @@
 import firebase from 'firebase';
-import apiKeys from "../config/keys";
+import firebaseConfig from "../config/keys";
 
-const firebaseApp = firebase.initializeApp(apiKeys.firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
 

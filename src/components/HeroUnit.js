@@ -110,10 +110,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   videoBkg: {
-    width: '100%',
+    width: '150%',
     height: "85vh",
     objectFit: "cover",
-    position: "relative",
+    //position: "relative",
     zIndex: 0, opacity: "0.85",
     '@media (max-width:668px)': {
       height: "130vh"
@@ -145,13 +145,13 @@ function HeroUnit() {
           }
         }}>
         <Typography variant="h4" style={{ color: "white", textShadow: "0.2px 0.2px #ffffff" }}>Kathryn Lam</Typography>
-        <Typography variant="subtitle" style={{ color: "white", fontStyle: "italic", fontWeight: "bold", textShadow: "0.2px 0.2px #ffffff" }}>As a founder and operator of a retail business turned Software Engineer, I am an example of how with eagerness and the right resources, any skill can be developed.
+        <Typography variant="subtitle" style={{ color: "white", fontStyle: "italic", fontWeight: "bold", textShadow: "0.2px 0.2px #ffffff" }}>As a founder and operator of a retail business turned Software Engineer, I am an example of how with eagerness and the right resources, any skills can be developed.
 
-        Despite my efficiency and success as an individual, I also welcome team collaboration so we can learn from our combined knowledge to devise bold ideas.
-      <br />
+          Despite my efficiency and success as an individual, I also welcome team collaboration so we can learn from our combined knowledge to devise bold ideas.
           <br />
-       My career goal is to build applications that satisfy the targeted user experience, integrate seamlessly with the big picture, and work reliably long-term.
-       </Typography>
+          <br />
+          My career goal is to build applications that satisfy the targeted user experience, integrate seamlessly with the big picture, and work reliably long-term.
+        </Typography>
       </Box>
       <Box className={classes.heroSecondRow}>
         <Box display="flex" flexDirection="column" className={classes.mainSecondRow}
