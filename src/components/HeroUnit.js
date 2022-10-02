@@ -208,15 +208,15 @@ function HeroUnit() {
             p={1}>
             <Typography variant="h6" className={classes.techTitle}>Technical Skills</Typography>
             <Box display="flex" className={classes.techGrid}>
-              <Paper className={classes.paper}>PostgreSQL</Paper>
-              <Paper className={classes.paper}>Node.js</Paper>
-              <Paper className={classes.paper}>Express</Paper>
+              <Paper className={classes.paper}>JavaScript/Python</Paper>
+              <Paper className={classes.paper}>Node.js/Express</Paper>
               <Paper className={classes.paper}>REST API</Paper>
+              <Paper className={classes.paper}>SQL Server</Paper>
             </Box>
             <Box display="flex" className={classes.techGrid}>
               <Paper className={classes.paper}>React</Paper>
               <Paper className={classes.paper}>Redux</Paper>
-              <Paper className={classes.paper}>HTML</Paper>
+              <Paper className={classes.paper}>HTML5</Paper>
               <Paper className={classes.paper}>CSS</Paper>
             </Box>
 
