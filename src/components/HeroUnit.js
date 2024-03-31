@@ -11,7 +11,8 @@ import {
 } from 'react-icons/ai';
 import './HeroUnit.css';
 import backgroundVideo from '../components/video/background.mp4';
-import resume from '../components/resume/Kathryn_Lam_Resume.pdf'
+import resume from '../components/resume/Kathryn_Lam.pdf'
+import { skills } from '../data/data';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -71,8 +72,11 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     width: "10vw",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
     margin: "2%",
-    textAlign: 'center',
     color: "black",
     borderWidth: '2%',
     borderColor: "#e1eaff",
@@ -83,6 +87,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   techGrid: {
+    display: "flex",
+    flexDirection: "row",
     textAlign: "center",
     '@media (max-width:668px)': {
       maxWidth: "60vh",
@@ -208,29 +214,16 @@ function HeroUnit() {
             p={1}>
             <Typography variant="h6" className={classes.techTitle}>Technical Skills</Typography>
             <Box display="flex" className={classes.techGrid}>
-              <Paper className={classes.paper}>JavaScript/Python</Paper>
-              <Paper className={classes.paper}>Node.js/Express</Paper>
-              <Paper className={classes.paper}>REST API</Paper>
-              <Paper className={classes.paper}>SQL Server</Paper>
+              {skills && skills.map((skill, index) => { return <Paper key={index} className={classes.paper}>{skill}</Paper> })}
             </Box>
-            <Box display="flex" className={classes.techGrid}>
-              <Paper className={classes.paper}>React</Paper>
-              <Paper className={classes.paper}>Redux</Paper>
-              <Paper className={classes.paper}>HTML5</Paper>
-              <Paper className={classes.paper}>CSS</Paper>
-            </Box>
-
-
             <Box display="flex" flexDirection="row"
-
               component={motion.div} whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.32 }
               }}
               whileTap={{ scale: 0.8 }} >
-              <a href={resume} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+              <a href={resume} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                 <Paper className={classes.button}><Button><Typography variant="subtitle1" style={{ fontWeight: "bold" }}>RESUME </Typography></Button></Paper></a>
-
             </Box>
           </Box>
         </Box>

@@ -4,7 +4,6 @@ import HeroUnit from "./HeroUnit";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
-import ContactForm from "./ContactForm";
 import Projects from "./Projects";
 
 const useStyles = makeStyles((theme) => ({
@@ -37,8 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-function Home()
-{
+function Home() {
   const classes = useStyles();
   return (
     <div className="App">
@@ -48,9 +46,7 @@ function Home()
       <Box className={classes.projects}>
         <Projects />
       </Box>
-      <Box display="flex" justifyContent="center" className={classes.contactMe}>
-        <ContactForm />
-      </Box>
+
       <Box className={classes.footer}>
         <Typography variant="subtitle2" style={{ color: "white", transform: 'skewY(9.5deg)' }}>
           © {new Date().getFullYear()} Kathryn Lam. All rights reserved.

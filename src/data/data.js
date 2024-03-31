@@ -83,3 +83,11 @@ export const projects = [
     tech: ["PostgreSQL", "Node.js", "REST API", "React"],
   },
 ];
+
+export const skills = [
+  'JavaScript - React , Angular, Node.js',
+  'SQL - PostgreSQL, Sequelize, SQL Server',
+  'HTML5, CSS3, SASS',
+  'Python - Flask',
+  'C# - .NET',
+]
