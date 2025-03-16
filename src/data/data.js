@@ -84,10 +84,39 @@ export const projects = [
   },
 ];
 
-export const skills = [
-  'JavaScript - React , Angular, Node.js',
-  'SQL - PostgreSQL, Sequelize, SQL Server',
-  'HTML5, CSS3, SASS',
-  'Python - Flask',
-  'C# - .NET',
-]
+export const skillsMap = {
+  Languages: [
+    'JavaScript',
+    'TypeScript',
+    'Python',
+    'SQL',
+    'ColdFusion'
+  ],
+  Frontend: [
+    'React.js',
+    'Angular.js',
+    'HTML5',
+    'CCS3',
+    'jQuery'
+  ],
+  Backend: [
+    'Node.js',
+    'Express.js',
+    'Flask',
+    'REST APIs',
+    'OAuth'
+  ],
+  "Databases & ORM": [
+    'PostgreSQL',
+    'MS SQL',
+    'Entity Framework',
+    'Sequelize.js',
+    'pg'
+  ],
+  "Testing, Tools & Practices": [
+    'Git',
+    'Agile',
+    'Jest',
+    'Enzymes'
+  ]
+}

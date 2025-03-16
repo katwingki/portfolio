@@ -171,13 +171,13 @@ const Projects = () => {
                 </Box>
               </Box>
               <Box className={classes.socialIcons}>
-                <a className={classes.icon} href={project.link}>
+                <a className={classes.icon} href={project.link} target="_blank" rel="noopener noreferrer">
                   <AiOutlineLink />
                 </a>
-                <a className={classes.icon} href={project.github}>
+                <a className={classes.icon} href={project.github} target="_blank" rel="noopener noreferrer">
                   <AiFillGithub />
                 </a>
-                <a className={classes.icon} href={project.youtube}>
+                <a className={classes.icon} href={project.youtube} target="_blank" rel="noopener noreferrer">
                   <TiSocialYoutubeCircular />
                 </a>
               </Box>
