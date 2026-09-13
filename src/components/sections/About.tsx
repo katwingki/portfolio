@@ -1,13 +1,18 @@
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Section from './Section';
+import { aboutParagraphs } from '../../data/about';
 
-// Bio content lands in Phase 3, sourced from kl-resume.
 function About() {
   return (
     <Section id="about" title="About">
-      <Typography variant="body1" color="text.secondary" textAlign="center">
-        Bio coming in Phase 3.
-      </Typography>
+      <Stack spacing={2}>
+        {aboutParagraphs.map((paragraph) => (
+          <Typography key={paragraph.slice(0, 24)} variant="body1" color="text.secondary">
+            {paragraph}
+          </Typography>
+        ))}
+      </Stack>
     </Section>
   );
 }

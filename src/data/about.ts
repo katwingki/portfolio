@@ -1,0 +1,7 @@
+// Sourced from ~/main/kl-resume (Kathryn_Lam_Senior_Software_Engineer.md).
+export const aboutParagraphs: string[] = [
+  "I'm a full-stack software engineer and technical lead with 5+ years of experience delivering workflow platforms, internal business applications, reporting tools, and AI-enabled products. I lead cross-functional initiatives from requirements discovery through architecture, implementation, quality validation, and stakeholder delivery — translating ambiguous business problems into scalable web applications and automation that helps teams reach insights faster.",
+  "Before software, I spent 10+ years growing a retail health business from the ground up. That experience shaped how I approach engineering: understand the real problem, ship something people actually need, and keep improving it. I made the jump into tech through the Grace Hopper Program at Fullstack Academy, and I've been building ever since — most recently leading agentic AI and workflow modernization initiatives at Cigna.",
+  "Alongside my full-time work, I've maintained a long-term contract partnership with Collegiate Gateway since 2021 — building and evolving their client-management platform as a trusted full-stack developer as their needs have grown.",
+  'I previously mentored aspiring engineers as a Web Development Instructional Associate at Fullstack Academy, coaching students through the same career transition I made.',
+];
