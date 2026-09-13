@@ -1,30 +1,24 @@
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import NavBar from './components/layout/NavBar';
+import Footer from './components/layout/Footer';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Experience from './components/sections/Experience';
+import Skills from './components/sections/Skills';
+import Projects from './components/sections/Projects';
+import Contact from './components/sections/Contact';
 
-// Phase 1 placeholder: proves the Vite + React + TS + MUI + GitHub Actions
-// deploy pipeline end to end. Real layout/content land in later phases.
 function App() {
   return (
-    <Box
-      sx={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: 1,
-        bgcolor: '#0e1830',
-        color: 'white',
-        textAlign: 'center',
-        px: 2,
-      }}
-    >
-      <Typography variant="h3" component="h1" fontWeight={700}>
-        Kathryn Lam
-      </Typography>
-      <Typography variant="body1">
-        Portfolio rebuild in progress - Phase 1: deployment pipeline online.
-      </Typography>
+    <Box>
+      <NavBar />
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </Box>
   );
 }
