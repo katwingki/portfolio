@@ -1,20 +1,26 @@
-# Kathryn Lam 
+# Kathryn Lam — Portfolio
 
-Hi there! I'm Kathryn Lam, a hands-on software engineer who has a solid foundation in building applications with PostgresSQL, Express, React, and Node.js using agile methodologies. An adventurer who loves to explore new technologies and ready to take on any new challenges. With many years of customer service and product development experience as an entrepreneur, I am confident about building great products that not only satisfy users’ experience but exceed their expectations.
+Source for my portfolio site, live at **https://katwingki.github.io/portfolio/**.
 
-This is the source code for my portfolio website. 
+Built with Vite, React 18, TypeScript, and MUI v5.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Development
 
-### URL 
-https://katwingki.github.io/portfolio
+```
+npm install
+npm run dev       # http://localhost:5173/portfolio/
+```
 
+## Build
 
-### `npm start`
+```
+npm run build     # outputs to dist/
+npm run preview   # serve the production build locally
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deployment
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Automatic: pushing to `main` triggers `.github/workflows/deploy.yml`, which
+builds the site and deploys it to GitHub Pages. No manual steps needed.
 
+See [CLAUDE.md](./CLAUDE.md) for project structure and architecture notes.
