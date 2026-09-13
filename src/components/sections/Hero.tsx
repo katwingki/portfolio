@@ -22,10 +22,15 @@ function Hero() {
         px: 2,
       }}
     >
-      <Typography variant="h2" component="h1" fontWeight={700}>
+      <Typography variant="h2" component="h1" fontWeight={700} className="hero-fade-in">
         Kathryn Lam
       </Typography>
-      <Typography variant="h5" component="p" sx={{ opacity: 0.85, maxWidth: 640 }}>
+      <Typography
+        variant="h5"
+        component="p"
+        className="hero-fade-in-dim"
+        sx={{ maxWidth: 640, animationDelay: '0.15s' }}
+      >
         Full-stack Software Engineer &amp; Technical Lead
       </Typography>
     </Box>

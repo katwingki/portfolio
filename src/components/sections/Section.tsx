@@ -3,6 +3,7 @@ import Box, { BoxProps } from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { NAV_HEIGHT } from '../../config/nav';
+import { useRevealOnScroll } from '../../hooks/useRevealOnScroll';
 
 interface SectionProps extends PropsWithChildren {
   id: string;
@@ -12,11 +13,15 @@ interface SectionProps extends PropsWithChildren {
 }
 
 // Shared section wrapper: consistent spacing, scroll offset for the fixed
-// nav bar, and an optional heading. Section content (About/Experience/Skills/
-// Projects/Contact) is filled in during later phases.
+// nav bar, a fade-up reveal on first scroll into view, and an optional
+// heading. Section content (About/Experience/Skills/Contact) is filled in
+// during later phases.
 function Section({ id, title, bgcolor = 'background.default', textColor, children }: SectionProps) {
+  const { ref, isVisible } = useRevealOnScroll<HTMLElement>();
+
   return (
     <Box
+      ref={ref}
       component="section"
       id={id}
       sx={{
@@ -24,6 +29,9 @@ function Section({ id, title, bgcolor = 'background.default', textColor, childre
         bgcolor,
         color: textColor,
         py: { xs: 6, md: 10 },
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
+        transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
       }}
     >
       <Container maxWidth="md">
