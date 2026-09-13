@@ -18,7 +18,7 @@ function Skills() {
       >
         {skillGroups.map((group) => (
           <Paper key={group.category} variant="outlined" sx={{ p: 2.5 }}>
-            <Typography variant="subtitle1" fontWeight={700} sx={{ mb: 1.5 }}>
+            <Typography variant="subtitle1" component="h3" fontWeight={700} sx={{ mb: 1.5 }}>
               {group.category}
             </Typography>
             <Stack direction="row" flexWrap="wrap" gap={1}>

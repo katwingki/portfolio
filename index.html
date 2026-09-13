@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0e1830" />
-    <meta name="description" content="Kathryn Lam - Software Engineer portfolio" />
-    <link rel="icon" href="/portfolio/favicon.ico" />
-    <link rel="manifest" href="/portfolio/manifest.json" />
+
+    <title>Kathryn Lam — Software Engineer</title>
+    <meta
+      name="description"
+      content="Kathryn Lam is a full-stack software engineer and technical lead specializing in workflow platforms, AI-enabled products, and cross-functional delivery."
+    />
+    <link rel="canonical" href="https://katwingki.github.io/portfolio/" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kathryn Lam — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack software engineer and technical lead specializing in workflow platforms, AI-enabled products, and cross-functional delivery."
+    />
+    <meta property="og:url" content="https://katwingki.github.io/portfolio/" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Root-relative, no manual "/portfolio" prefix: Vite injects `base`
+         itself for these asset tags in both dev and build, so a hardcoded
+         prefix here would double up (e.g. /portfolio/portfolio/favicon.svg
+         in dev, though the production build alone happened to render fine). -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Load the Google Fonts stylesheet without blocking first paint: fetch
+         it at high priority in the background, then swap it in once ready. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
-    <title>Kathryn Lam</title>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
