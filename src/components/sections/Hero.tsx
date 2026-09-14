@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { NAV_HEIGHT } from '../../config/nav';
+import HeroTimeline from './HeroTimeline';
 
 function Hero() {
   return (
@@ -33,6 +34,7 @@ function Hero() {
       >
         Full-stack Software Engineer &amp; Technical Lead
       </Typography>
+      <HeroTimeline />
     </Box>
   );
 }
